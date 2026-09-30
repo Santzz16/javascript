@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="general">
+        <div id=spotify>
+            <img src="img/Spotify-Logo-Transparent-File.webp" alt="Logo spotify">
+            <h1>SPOTIFY</h1>
+        </div>
+        <div id="seleccion">
+            <button id="registrarse">REGISTRARSE</button>
+            <button id="iniciar_sesion">INICIAR SEŚION</button>
+        </div>
+        <form id="sesion">
+            <input
+                type="text"
+                placeholder="G-mail"
+                id="gmail"
+             />
+            <input type="password" placeholder="Contraseña" id="contrasena" />
+            <div id="mantener">
+                <input type="checkbox" />
+                <p>Mantener sesion iniciada</p>
+            </div>
+            <button id="iniciar" type="submit">Iniciar sesón</button>
+            <button id="olvidar" type="button">¿Olvido su contraseña?</button>
+            
+        </form>
+        <div id="sesion-iniciada-msg">
+                <p>SESION INICIADA</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+.tarjeta {
+    width: 200px;
+    padding: 30px;
+    margin: 10px;
+    border: 2px solid black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.seleccionada {
+    border: 2px solid blue;
+    background-color: lightblue;
+}
