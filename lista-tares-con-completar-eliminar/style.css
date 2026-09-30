@@ -1,0 +1,127 @@
+/*GENERAL*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*body*/
+body{
+    padding: 10px;
+    height: 100vh;
+    background: #833AB4;
+    background: radial-gradient(circle, rgba(131, 58, 180, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+/*CREADOR DE TAREAS*/
+#task-creater{
+    display: flex;
+    align-items: center;
+    height: 35px;
+    background-color: rgb(32, 32, 32);
+    padding: 15px;
+    border-width: 1px;
+    border-color: #c5c5c5;
+    border-style:inset;
+    border-radius: 20px; 
+}
+
+#input-task{
+    background-color: transparent;
+    color: #c5c5c5;
+    border: 0 none;
+}
+
+#input-task::placeholder{
+    color: rgb(149, 147, 147);
+}
+
+#input-task:focus{
+    outline: none;
+}
+
+#add-task-btn{
+    padding: 2px 8px;
+    color: #d5d1d1;
+    background-color: #833AB4;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(52, 23, 72);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+/*LISTA DE TAREAS*/
+#task-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+#task-list li{
+    min-height: 30px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgb(25, 25, 25);
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    align-items: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+#task-list li:hover{
+    transform: scale(1.03) translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0,0,0,5);
+}
+
+
+.completar-btn{
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: solid grey 2px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-completed{
+    width: 15px;
+    height: 15px;
+    background-color: #833AB4;
+    border: solid grey 2px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-text{
+    transition: all;
+    color: aliceblue;
+}
+
+.task-text-completed{
+    transition: all;
+    color: aliceblue;
+    text-decoration: line-through;
+}
+
+.delete-btn{
+    background-color: transparent;
+    border: none;
+    color: #c5c5c5;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+
+}
